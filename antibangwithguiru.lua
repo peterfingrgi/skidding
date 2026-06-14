@@ -183,7 +183,7 @@ UICorner_6.Parent = changehidebind
 	local dd = knob:WaitForChild("UIDragDetector")
 
 	local min = 0.7
-	local max = 2.5
+	local max = 4.5
 
 	dd.DragContinue:Connect(function()
 		local x = knob.Position.X.Offset
@@ -203,7 +203,7 @@ UICorner_6.Parent = changehidebind
 		if i.KeyCode.Name == bind.Value then --scriptblox.com/script/Universal-Script-anti-bang-21721
 			local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
 
-			workspace.FallenPartsDestroyHeight = -1700
+			workspace.FallenPartsDestroyHeight = -3000
 			local lastCFrame = hrp.CFrame
 
 			hrp.CFrame = CFrame.new(Vector3.new(0, -500, 0))
