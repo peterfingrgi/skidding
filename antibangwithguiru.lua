@@ -183,7 +183,7 @@ UICorner_6.Parent = changehidebind
 	local dd = knob:WaitForChild("UIDragDetector")
 
 	local min = 0.7
-	local max = 4.5
+	local max = 5
 
 	dd.DragContinue:Connect(function()
 		local x = knob.Position.X.Offset
